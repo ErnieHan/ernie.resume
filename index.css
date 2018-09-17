@@ -10,8 +10,11 @@
     font-family: Calibri;
     src: url(font/CalibriNormal.ttf);
     }
-@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
 
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+* {
+    font-family: 'Noto Sans TC';
+}
 
 body{
     position: relative;
