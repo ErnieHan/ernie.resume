@@ -11,9 +11,9 @@
     src: url(font/CalibriNormal.ttf);
     }
 
-@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
 * {
-    font-family: 'Noto Sans TC';
+    font-family: 'Noto Sans TC', sans-serif;
 }
 
 body{
