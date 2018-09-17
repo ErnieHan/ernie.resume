@@ -1,0 +1,687 @@
+@font-face {
+    font-family: CalibriBold-I;
+    src: url(font/CalibriBoldItalic.ttf);
+    }
+@font-face {
+    font-family: CalibriBold;
+    src: url(font/CalibriBold.ttf);
+    }
+@font-face {
+    font-family: Calibri;
+    src: url(font/CalibriNormal.ttf);
+    }
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+
+body{
+    position: relative;
+    font-family: 'Noto Sans TC';
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+h1,h2,h3,h4,h5,p{
+    margin: 0;
+}
+.body_container{
+    max-width: 1200px;
+    margin: 0 auto;
+    height: auto;
+    /* background: #000; */
+}
+.main_100vh{
+    max-width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    width: 900px;
+    height: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.main_sq{
+    width: 500px;
+    height: 500px;
+    border: solid 5px transparent;
+    position: absolute;
+    left: 150px;
+    top:50%;
+    transform: translateY(-50%);
+    z-index: 99;
+}
+
+.main_back{
+    /* border: solid 5px #778b9a; */
+    position: relative;
+    z-index: 1;
+}
+    @keyframes draw-square {
+        from{
+        stroke-dashoffset: -2000;
+        }
+        to{
+        stroke-dashoffset: 0;
+        }
+    }
+.square{
+        stroke-dasharray: 2000;
+        stroke-dashoffset: 2000;
+        animation: draw-square 6s 1s forwards;
+}
+@keyframes sqh1_o{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.main_sq h1{
+    opacity: 0;
+    font-family: CalibriBold-I;
+    font-size: 64px;
+    color:#778b9a;
+    text-align: center;
+    letter-spacing: 12px;
+    /* background: #000; */
+    height: auto;
+    top:125px;
+    position: relative;
+    animation: sqh1_o 2s 3s forwards;
+}
+@keyframes sqh2_o{
+    from{
+        opacity: 0;
+        transform: translateY(-50px)
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+.main_sq h2{
+    opacity: 0;
+    transform: translateY(-50px);
+    font-family: CalibriBold-I;
+    font-size: 28px;
+    color:#778b9a;
+    text-align: center;
+    /* background: #000; */
+    height: auto;
+    top:150px;
+    position: relative;
+    animation: sqh2_o 2s 3s forwards;
+}
+@keyframes me_show{
+    from{
+        opacity: 0;
+        transform: scale(1.2) translateY(-50%);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1) translateY(-50%);
+    }
+}
+.me{
+    max-width: 320px;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    left:500px;
+    z-index: 1;
+    opacity: 0;
+    animation: me_show 3s 2s forwards; 
+}
+@keyframes line_o{
+    from{
+        max-width: 0;
+    }
+    to{
+        max-width: 97px;
+    }
+}
+.short_line{
+    max-width: 0;
+    height: 3px;
+    background: #778b9a;
+    margin: 30px auto;
+    position: relative;
+    top:100px;
+    left:100px;
+    transform: rotate(-45deg);
+    animation: line_o 2s 4s forwards;
+}
+@keyframes main_text{
+    from{
+        max-width: 0;
+    }
+    to{
+        max-width: 385px;
+    }
+}
+.main_text_01{
+    max-width: 385px;
+    height: 40px;
+    background: #778b9a;
+    position: relative;
+    top:180px;
+    left:180px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+
+}
+@keyframes main_text02{
+    from{
+        max-width: 0;
+    }
+    to{
+        max-width: 245px;
+    }
+}
+.text02{
+    max-width: 245px;
+    top:200px;
+    left:510px;
+    justify-content: flex-end;
+}
+@keyframes main_text_o{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+
+    }
+}
+@keyframes typing{
+    from{
+        width: 0ch;
+    }
+    to{
+        width: 20ch;
+    }
+}
+.main_text_01 h2{
+    width: 0ch;
+    font-size:20px;
+    color:#fff;
+    font-weight: normal;
+    margin: 0 10px;
+    /* padding: 0 10px; */
+    letter-spacing: 2px;
+    animation: typing 2s steps(11) 1s forwards;
+    overflow: hidden;
+    white-space: nowrap;
+}
+@keyframes typing02{
+    from{
+        width: 0ch;
+    }
+    to{
+        width: 14.8ch;
+    }
+}
+.main_text_01 h3{
+    width: 0;
+    font-size:20px;
+    color:#fff;
+    font-weight: normal;
+    margin: 0 10px;
+    /* padding: 0 10px; */
+    letter-spacing: 2px;
+    overflow: hidden;
+    white-space: nowrap;
+    line-height: 40px;
+    animation: typing02 1.4s steps(8) 3s forwards;
+}
+
+/* ABOUT ME CSS*/
+
+.about{
+    width: 100%;
+    height: auto;
+    /* background: #ccc; */
+    margin: 50px auto 100px auto;
+}
+.about_title{
+    max-width: 1100px;
+    height: auto;
+    /* background: #333; */
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 3px solid #778b9a;
+    position: relative;
+
+}
+/* @keyframes border_show{
+    from{
+        width: 0px;
+    }
+    to{
+        width: 100%;
+    }
+}
+.about_title::after{
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: -2px;
+    width: 0%;
+    height: 3px;
+    background: #778b9a;
+} */
+
+@keyframes title_show{
+    from{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.about_title h1{
+    font-size: 32px;
+    color:#778b9a;
+    margin: 5px 0;
+    letter-spacing: 1.5px;
+    opacity: 0;
+}
+.about_title h2{
+    font-size: 80px;
+    color:#778b9a;
+    font-family: CalibriBold;
+    opacity: 0;
+}
+.about_title h3{
+    font-size: 24px;
+    color: #6c6c6c;
+    font-family: Calibri;
+    letter-spacing: 3px;
+    margin: 5px 0;
+    opacity: 0;
+}
+
+.big_word{
+    width: 80px;
+    height: 95px;
+    text-align: center;
+    border-bottom: 8px solid #778b9a;
+}
+.about_01{
+    max-width: 1100px;
+    height: auto;
+    padding:10px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+@keyframes about_fadein{
+    from{
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.about_left{
+    width: 300px;
+    height: auto;
+    /* background: #fff; */
+    display: flex;
+    text-align: right;
+    opacity: 0;
+}
+.about_right{
+    width: 500px;
+    height: auto;
+    /* background: #fff; */
+    display: flex;
+    text-align: right;
+    opacity: 0;
+}
+.key_left h4{
+    font-size:20px;
+    font-family: CalibriBold-I;
+    color:#6c6c6c;
+    line-height: 29px;
+    letter-spacing: 1.5px;
+}
+.answer_left h4{
+    font-weight: bold;
+    padding:0px 10px;
+    text-align: left;
+    font-size:18px;
+    color:#6c6c6c;
+    line-height: 29px;
+    font-family: CalibriBold-I;
+    letter-spacing: 1.5px;
+}
+@keyframes about_02fadein{
+    from{
+        opacity: 0;
+        transform: scale(1.1)
+    }
+    to{
+        opacity: 1;
+        transform: scale(1)
+    }
+}
+.about_02{
+    max-width: 1100px;
+    height:auto;
+    margin: 0 auto;
+    padding:30px 10px;
+    opacity: 0;
+    
+}
+.about_02 p{
+    color: #6c6c6c;
+    font-size: 15px;
+    line-height: 36px;
+    text-align: justify;
+    letter-spacing: 1.5px;
+}
+.bold_text{
+    color:#778b9a;
+    font-weight: bold;
+}
+
+/* WORK EXPERIENCE CSS*/
+
+.title_right{
+    text-align: right;
+}
+.main_experience{
+    max-width: 1100px;
+    height: auto;
+    /* background: #ccc; */
+    margin: 30px auto 100px auto;
+    display: flex;
+    justify-content: space-around;
+}
+.time_outline{
+    width: 25px;
+    position: relative;
+    margin: 10px;
+}
+@keyframes show_time{
+    from{
+        height: 0;
+    }
+    to{
+        height: 520px;
+    }
+}
+.time_line{
+    width: 10px;
+    height: 0px;
+    background: #efefef;
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+    border-radius: 15px;
+
+}
+.time_circle{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #778b9a;
+    position: absolute;
+    top:-5px;
+    left:0px;
+    opacity: 0;
+}
+.c02{
+    top:148px;
+}
+.c03{
+    top:296px;
+}
+.c04{
+    top:445px;
+}
+
+.experience_text{
+    width: 1000px;
+    height: auto;
+    margin: 10px;
+}
+@keyframes ex_textshow{
+    from{
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.ex_text01{
+    opacity: 0;
+}
+.experience_text h3{
+    font-family: Calibri;
+    color: #6c6c6c;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    padding:0px 5px;
+}
+.experience_text h2{
+    color: #6c6c6c;
+    font-size: 24px;
+    letter-spacing: 1.5px;
+    padding:5px;
+}
+.experience_text p{
+    color: #6c6c6c;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    padding:5px;
+    text-align: justify;
+    line-height: 28px;
+}
+
+/* SKILL */
+.skill{
+    width: 100%;
+    height: auto;
+    /* background: #000; */
+    margin: 50px auto 100px auto;
+}
+.main_skill{
+    max-width: 1100px;
+    margin: 0px auto;
+    height: auto;
+    padding:10px;
+}
+.skill_title{
+    max-width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px auto 5px auto;
+    opacity: 0;
+}
+.skill_top{
+    margin: 0px auto;
+}
+.skill_title h3{
+    font-size:28px;
+    font-family: CalibriBold;
+    letter-spacing: 1.5px;
+    color: #6c6c6c;
+}
+.skill_grey{
+    width:466px ;
+    height: 20px;
+    background: #efefef;
+    border-radius: 50px;
+}
+@keyframes skill_50{
+    from{
+        max-width: 0;
+    }
+    to{
+        max-width: 50%;
+    }
+}
+@keyframes skill_75{
+    from{
+        max-width: 0;
+    }
+    to{
+        max-width: 75%;
+    }
+}
+@keyframes skill_25{
+    from{
+        max-width: 0;
+    }
+    to{
+        max-width: 25%;
+    }
+}
+.skill_blue{
+    max-width: 0;
+    height: 20px;
+    background: #778b9a;
+    border-radius: 50px;
+}
+@keyframes skill_textin{
+    from{
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+.skill_text{
+    opacity: 0;
+}
+.skill_text p{
+    font-size: 15px;
+    color: #6c6c6c;
+    letter-spacing: 1.5px;
+    line-height: 29px;
+    text-align: justify;
+}
+.skill_75{
+    max-width: 0;
+}
+.skill_25{
+    max-width: 0;
+}
+
+/* LANGUAGE */
+.language{
+    max-width: 100%;
+    height: auto;
+    /* background: #ccc; */
+    margin: 50px auto 100px auto;
+}
+.lan_01{
+    max-width: 1100px;
+    margin: 20px auto;
+    padding:10px;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.lan_left{
+    width: 350px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.lan_left h1{
+    color:#778b9a;
+    font-size: 32px;
+}
+.lan_left h2{
+    color:#778b9a;
+    font-family: CalibriBold-I;
+    font-size: 24px;
+}
+@keyframes lang_circle_show{
+    25%{
+        opacity: 0;
+        transform: scale(1.2);
+    }
+    75%{
+        opacity: 1;
+        transform: scale(0.75);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.lan_circle_75{
+    width: 152px;
+    height: 152px;
+    background: url(img/lang_circle_75.svg)no-repeat center center;
+    text-align: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+.circle_80{
+    background: url(img/lang_circle_80.svg)no-repeat center center;
+}
+.circle_50{
+    background: url(img/lang_circle_50.svg)no-repeat center center;
+}
+.lan_right{
+    width: 350px;
+    margin: 10px;
+    height: auto;
+    opacity: 0;
+
+}
+.lan_right_02{
+    text-align: center;
+}
+.lan_right p{
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    color:#6c6c6c;
+    text-align: justify;
+}
+.lan_right_02 h3{
+    font-size: 22px;
+    color: #6c6c6c;
+    margin: 10px auto;
+}
+.lan_right_02 h4{
+    font-family: CalibriBold-I;
+    font-size: 28px;
+    color: #6c6c6c;
+}
+.lan_right_02 h5{
+    font-size: 15px;
+    color: #6c6c6c;
+    font-family: CalibriBold-I;
+}
