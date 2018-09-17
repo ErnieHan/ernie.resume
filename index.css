@@ -109,7 +109,7 @@ h1,h2,h3,h4,h5,p{
 .main_sq h2{
     opacity: 0;
     transform: translateY(-50px);
-    font-family: CalibriBold-I;
+    font-family: CalibriBold-I,'Noto Sans TC', sans-serif;
     font-size: 28px;
     color:#778b9a;
     text-align: center;
