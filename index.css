@@ -209,27 +209,28 @@ h1,h2,h3,h4,h5,p{
         width: 0ch;
     }
     to{
-        width: 20ch;
+        width: 22ch;
     }
 }
 .main_text_01 h2{
-    width: 0ch;
+    width: 0;
     font-size:20px;
     color:#fff;
     font-weight: normal;
     margin: 0 10px;
     /* padding: 0 10px; */
     letter-spacing: 2px;
-    animation: typing 2s steps(10) 1s forwards;
+    animation: typing 2s steps(11) 1s forwards;
     overflow: hidden;
     white-space: nowrap;
+    /* background: #000; */
 }
 @keyframes typing02{
     from{
         width: 0ch;
     }
     to{
-        width: 15ch;
+        width: 16ch;
     }
 }
 .main_text_01 h3{
@@ -244,6 +245,7 @@ h1,h2,h3,h4,h5,p{
     white-space: nowrap;
     line-height: 40px;
     animation: typing02 1.4s steps(8) 3s forwards;
+    /* background: #000; */
 }
 
 /* ABOUT ME CSS*/
