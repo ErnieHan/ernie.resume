@@ -220,7 +220,7 @@ h1,h2,h3,h4,h5,p{
     margin: 0 10px;
     /* padding: 0 10px; */
     letter-spacing: 2px;
-    animation: typing 2s steps(11) 1s forwards;
+    animation: typing 2s steps(10) 1s forwards;
     overflow: hidden;
     white-space: nowrap;
 }
@@ -229,7 +229,7 @@ h1,h2,h3,h4,h5,p{
         width: 0ch;
     }
     to{
-        width: 14.8ch;
+        width: 15ch;
     }
 }
 .main_text_01 h3{
